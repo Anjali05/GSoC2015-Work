@@ -44,7 +44,7 @@ public class SystersLogin {
 	     username.sendKeys("dummyusername");//change before running
    	     pass=driver.findElement(By.name("p"));
    	     pass.clear();
-  	     pass.sendKeys("dummypasswork");//change before running
+  	     pass.sendKeys("dummypassword");//change before running
 	     Login=driver.findElement(By.xpath(".//*[@id='dw__login']/div/fieldset/input"));
 	     Login.click();
 	     
