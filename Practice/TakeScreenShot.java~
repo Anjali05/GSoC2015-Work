@@ -22,7 +22,7 @@ public class TakeScreenShot {
 	public void BrowserTest() throws Exception
 	{
 		System.setProperty("webdriver.chrome.driver",
-				"/home/shally/GSOC-2015/Workspace/Local_Workspace/chromedriver");
+				"/home/shally/GSOC-2015/Workspace/MyWork_Gsoc_2015/chromedriver");
 		driver=new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.id("testing")).sendKeys("test");//condition for test to fail

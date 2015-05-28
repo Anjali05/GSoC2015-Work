@@ -27,9 +27,9 @@ public class Login {
     driver.get(baseUrl + "/systers-dev/doku.php/");
     driver.findElement(By.linkText("Login")).click();
     driver.findElement(By.name("p")).clear();
-    driver.findElement(By.name("p")).sendKeys("dummy");
+    driver.findElement(By.name("p")).sendKeys("anjali05");
     driver.findElement(By.id("focus__this")).clear();
-    driver.findElement(By.id("focus__this")).sendKeys("dummy");
+    driver.findElement(By.id("focus__this")).sendKeys("anjalis");
     driver.findElement(By.name("p")).click();
     driver.findElement(By.cssSelector("fieldset > input.button")).click();
   }
