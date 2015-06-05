@@ -28,7 +28,7 @@ public class Can_Edit
 		LoginPage.Goto();
 		LoginPage.LoginAs("Anjali").WithPassword("anjali").Login();
 		EditPage.Goto();
-		EditPage.ChangeLastnameTo("Kumar").Update();
+		EditPage.ChangeLastnameTo("Shally").Update();
 		Assert.assertEquals("Failed",true,ViewUpdate.HasChanged());
 		
 	}

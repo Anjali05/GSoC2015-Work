@@ -12,7 +12,7 @@ public class ViewUpdate
 		 WebElement New=Driver.Instance.findElement(By.xpath("html/body/div[1]/div/div[2]/ul[2]/li/a"));
 		 String check=New.getText();
 		 System.out.println(check);
-		  if(check.equals("ANJALI KUMAR"))
+		  if(check.equals("ANJALI SHALLY"))
 			  return true;
 		  else
 			  return false;
