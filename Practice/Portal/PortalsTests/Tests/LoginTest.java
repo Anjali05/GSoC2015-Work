@@ -1,49 +1,23 @@
 package Tests;
-import java.io.IOException;
-
-import junit.framework.Assert;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-
-import Login.Driver;
+import junit.framework.Assert;
 import Login.LoggedInCheck;
 import Login.LoginPage;
 
 
-public class LoginTest 
+public class LoginTest extends CommonTests
 {
-    @Before
-    public void InitDriver()
-    {
-    	String s="Login";
-    	Driver.Initialize(s);
-    	
-    }
+	static String s="Login";
+	public LoginTest() 
+	{
+		super(s);
+	}
+
 	@Test
 	public void test() 
 	{
-		LoginPage.Goto();
-		LoginPage.LoginAs("Anjali").WithPassword("anjali").Login();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAt());
 	}
-	
-	@After
-	public void tearDown()
-	{
-		try 
-		{
-			Driver.close();
-		} 
-		catch (IOException e) 
-		{
-			
-			e.printStackTrace();
-		}
-	}
-
-
 	
 
 }
