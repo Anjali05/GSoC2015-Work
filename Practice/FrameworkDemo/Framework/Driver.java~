@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-//for singleton driver , so that same driver is used for checking
+//for singleton driver , so that same driver is user for checking
 public class Driver 
 {
 	public static WebDriver Instance;
