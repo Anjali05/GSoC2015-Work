@@ -1,7 +1,9 @@
-package Login;
+package AdminFeatures;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import Login.*;
 
 public class CommunityFormCheck 
 {

@@ -24,7 +24,8 @@ public class Driver
 	public static void close() throws IOException 
 	{
 		File scrshot=((TakesScreenshot)Instance).getScreenshotAs(OutputType.FILE);//TakesScreenshot driver cannot be instantiated
-		FileUtils.copyFile(scrshot, new File("/home/shally/GSOC-2015/Workspace/Local_Workspace/Portal/Screenshots/"+screenshot+".png"));
+		FileUtils.copyFile(scrshot, new File("/home/shally/GSOC-2015/Workspace/Local_Workspace/" +
+				                            "Portal/Screenshots/"+screenshot+".png"));
 		Instance.close();
 		
 	}
