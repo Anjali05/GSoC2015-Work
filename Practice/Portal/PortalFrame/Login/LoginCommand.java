@@ -9,6 +9,7 @@ public class LoginCommand
 
 	private String username;
 	private String password;
+	private int index;
 	public LoginCommand(String username) 
 	{
 		this.username = username;
@@ -19,14 +20,12 @@ public class LoginCommand
 		this.password=password;
 		return this;
 	}
+	
 	public void Login() 
 	{
 		//Driver.Instance.get(LoginPage.baseURL + "/");
-		WebElement login=Driver.Instance.findElement(By.xpath("html" +
-				                "/body/div[1]/div/div[2]/ul[2]/li[2]/a"));
-		login.click();
 		
-		WebElement usrname=Driver.Instance.findElement(By.id("id_login"));
+	    WebElement usrname=Driver.Instance.findElement(By.id("id_login"));
 		usrname.clear();
 		usrname.sendKeys(username);
 		WebElement passwrd=Driver.Instance.findElement(By.id("id_password"));
@@ -34,9 +33,25 @@ public class LoginCommand
 		passwrd.sendKeys(password);
 		WebElement signUp=Driver.Instance.findElement(By.xpath("//button[@type='submit']"));
 		signUp.click();
+	}
+	
+	public void GoogleLogin()
+	{
+		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[1]")).click();
+	}
+	public void FacebookLogin() 
+	{
+		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[2]")).click();
 		
+	}
+	public void TwitterLogin() 
+	{
+		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[3]")).click();
 		
-		
+	}
+	public void GithubLogin() 
+	{
+		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[4]")).click();
 	}
 	
 }

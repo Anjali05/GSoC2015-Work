@@ -31,10 +31,10 @@ public class CommunityFormCheck
 			    String check=formtitle.getText();
 			    System.out.println(check); 
 			    //Close the new window
-			    Driver.Instance.close();
+			   // Driver.Instance.close();
 
 			    //Switch back to original window
-		        Driver.Instance.switchTo().window(oldURL);
+		        //Driver.Instance.switchTo().window(oldURL);
 		        
 		        if(check.equals("Anita Borg Institute Community Proposal Form"))
 		        	return true;
