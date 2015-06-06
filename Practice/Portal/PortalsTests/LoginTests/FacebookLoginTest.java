@@ -5,9 +5,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import CommonTests.CommonTestsLogin;
 import Login.LoggedInCheck;
 
-public class FacebookLoginTest extends CommonTests
+public class FacebookLoginTest extends CommonTestsLogin
 {
 	static String s="FacebookLogin";
 	public FacebookLoginTest() 

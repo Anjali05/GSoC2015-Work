@@ -4,9 +4,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import CommonTests.CommonTestsLogin;
 import Login.LoggedInCheck;
 
-public class GithubLogintest extends CommonTests
+public class GithubLogintest extends CommonTestsLogin
 {
 	static String s="GithubLogin";
 	public GithubLogintest() 

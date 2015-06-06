@@ -1,13 +1,13 @@
-package AdminFeatureTests;
+package AdminTests;
 import org.junit.Assert;
 import org.junit.Test;
 
 import AdminFeatures.EditPage;
 import AdminFeatures.ViewUpdate;
+import CommonTests.CommonTestsLogin;
 import Login.LoginPage;
-import LoginTests.CommonTests;
 
-public class Can_Edit extends CommonTests
+public class Can_Edit extends CommonTestsLogin
 {
 	static String s="EditProfile";
 	public Can_Edit() 

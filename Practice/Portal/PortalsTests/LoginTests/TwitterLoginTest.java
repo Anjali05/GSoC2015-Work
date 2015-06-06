@@ -5,9 +5,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import CommonTests.CommonTestsLogin;
 import Login.LoggedInCheck;
 
-public class TwitterLoginTest extends CommonTests
+public class TwitterLoginTest extends CommonTestsLogin
 {
     static String s="TwitterLogin";
 	public TwitterLoginTest()

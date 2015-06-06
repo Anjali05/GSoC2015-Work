@@ -5,9 +5,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import CommonTests.CommonTestsLogin;
 import Login.LoggedInCheck;
 
-public class GoogleLoginTests extends CommonTests
+public class GoogleLoginTests extends CommonTestsLogin
 {
 
 	static String s="GoogleLogin";

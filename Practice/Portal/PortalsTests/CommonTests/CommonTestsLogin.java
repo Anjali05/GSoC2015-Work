@@ -1,4 +1,4 @@
-package LoginTests;
+package CommonTests;
 
 import java.io.IOException;
 
@@ -8,11 +8,11 @@ import org.junit.Before;
 import Login.Driver;
 import Login.LoginPage;
 
-public class CommonTests 
+public class CommonTestsLogin 
 {
 	 String s;
 	 public static int index;
-	 public CommonTests(String s)
+	 public CommonTestsLogin(String s)
 	 {
 		this.s=s;
 	 }
