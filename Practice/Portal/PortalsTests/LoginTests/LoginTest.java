@@ -1,12 +1,13 @@
 package LoginTests;
 import org.junit.Test;
 import junit.framework.Assert;
-import CommonTests.CommonTestsLogin;
+
+import CommonTests.CommonTests;
 import Login.LoggedInCheck;
 import Login.LoginPage;
 
 
-public class LoginTest extends CommonTestsLogin
+public class LoginTest extends CommonTests
 {
 	static String s="Login";
 	public LoginTest() 
@@ -17,8 +18,9 @@ public class LoginTest extends CommonTestsLogin
 	@Test
 	public void test() 
 	{
-		
-		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtFacebookLogin());
+		LoginPage.Goto();
+		LoginPage.LoginAs("Anjali").WithPassword("anjali").Login();
+		Assert.assertEquals("Failed",true,LoggedInCheck.IsAt());
 	}
 	
 

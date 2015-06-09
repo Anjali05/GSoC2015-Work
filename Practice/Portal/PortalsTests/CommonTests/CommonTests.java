@@ -11,10 +11,10 @@ import HomepageFeatures.*;
 import Login.Driver;
 import Login.LoginPage;
 
-public class HomepageCommonTests
+public class CommonTests
 {
     String s;
-	public HomepageCommonTests(String s)
+	public CommonTests(String s)
 	{
 		this.s=s;
 	}

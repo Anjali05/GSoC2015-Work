@@ -35,21 +35,21 @@ public class LoginCommand
 		signUp.click();
 	}
 	
-	public void GoogleLogin()
+	public static void GoogleLogin()
 	{
 		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[1]")).click();
 	}
-	public void FacebookLogin() 
+	public static void FacebookLogin() 
 	{
 		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[2]")).click();
 		
 	}
-	public void TwitterLogin() 
+	public static void TwitterLogin() 
 	{
 		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[3]")).click();
 		
 	}
-	public void GithubLogin() 
+	public static void GithubLogin() 
 	{
 		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[4]")).click();
 	}

@@ -10,10 +10,10 @@ public class LoginPage
 	public static void Goto() 
 	{
 		
-		Driver.Instance.get(baseURL);
+		//Driver.Instance.get(baseURL);
 		WebElement login=Driver.Instance.findElement(By.xpath("html" +
                 "/body/div[1]/div/div[2]/ul[2]/li[2]/a"));
-               login.click();
+        login.click();
         
 	}
 

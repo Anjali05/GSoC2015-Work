@@ -5,10 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-import CommonTests.HomepageCommonTests;
+import CommonTests.CommonTests;
 import HomepageFeatures.Homepage;
 
-public class SystersAndCRAwReadMoreTest extends HomepageCommonTests
+public class SystersAndCRAwReadMoreTest extends CommonTests
 {
 	static String s="SystersCRA-W";
 	public SystersAndCRAwReadMoreTest() 

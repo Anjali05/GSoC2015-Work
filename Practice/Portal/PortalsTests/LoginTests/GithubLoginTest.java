@@ -4,22 +4,25 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import CommonTests.CommonTestsLogin;
-import Login.LoggedInCheck;
 
-public class GithubLogintest extends CommonTestsLogin
+import CommonTests.CommonTests;
+import Login.LoggedInCheck;
+import Login.LoginCommand;
+import Login.LoginPage;
+
+public class GithubLoginTest extends CommonTests
 {
 	static String s="GithubLogin";
-	public GithubLogintest() 
+	public GithubLoginTest() 
 	{
 		super(s);
-		super.index=4;
-		
 	}
 	
 	@Test
 	public void test()
     {
+		LoginPage.Goto();
+		LoginCommand.GithubLogin();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtGitHUbLogin());
 	}
 

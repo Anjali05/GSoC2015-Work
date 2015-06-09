@@ -1,27 +1,29 @@
 package LoginTests;
 
-import static org.junit.Assert.*;
 import junit.framework.Assert;
 
 import org.junit.Test;
 
-import CommonTests.CommonTestsLogin;
+import CommonTests.CommonTests;
 import Login.LoggedInCheck;
+import Login.LoginCommand;
+import Login.LoginPage;
 
-public class GoogleLoginTests extends CommonTestsLogin
+public class GoogleLoginTest extends CommonTests
 {
 
 	static String s="GoogleLogin";
-	public GoogleLoginTests() 
+	public GoogleLoginTest() 
 	{
 		super(s);
-		super.index=1;
 		
 	}
 
 	@Test
 	public void test() 
 	{
+		LoginPage.Goto();
+		LoginCommand.GoogleLogin();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtGoogleLogin());
 	}
 

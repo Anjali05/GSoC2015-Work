@@ -2,12 +2,13 @@ package AdminTests;
 import org.junit.Assert;
 import org.junit.Test;
 
+import AdminFeatures.AdminLogin;
 import AdminFeatures.EditPage;
 import AdminFeatures.ViewUpdate;
-import CommonTests.CommonTestsLogin;
+import CommonTests.CommonTests;
 import Login.LoginPage;
 
-public class Can_Edit extends CommonTestsLogin
+public class Can_Edit extends CommonTests
 {
 	static String s="EditProfile";
 	public Can_Edit() 
@@ -19,6 +20,7 @@ public class Can_Edit extends CommonTestsLogin
 	@Test
 	public void test()
 	{
+		AdminLogin.login();
 		EditPage.Goto();
 		EditPage.ChangeLastnameTo("Kumar").Update();
 		Assert.assertEquals("Failed",true,ViewUpdate.HasChanged());	

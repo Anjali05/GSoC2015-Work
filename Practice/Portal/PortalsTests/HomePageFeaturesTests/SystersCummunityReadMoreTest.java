@@ -3,11 +3,11 @@ import static org.junit.Assert.fail;
 import HomepageFeatures.*;
 import org.junit.Assert;
 import org.junit.Test;
-import CommonTests.HomepageCommonTests;
+import CommonTests.CommonTests;
 import Login.LoggedInCheck;
 
 
-public class SystersCummunityReadMoreTest extends HomepageCommonTests
+public class SystersCummunityReadMoreTest extends CommonTests
 {
 
 	static String s="CommunityReadMore";

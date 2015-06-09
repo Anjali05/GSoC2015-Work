@@ -4,11 +4,11 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import AdminFeatures.CommunityFormCheck;
-import CommonTests.CommonTestsLogin;
+import AdminFeatures.*;
+import CommonTests.CommonTests;
 import Login.*;
 
-public class Can_Create_CommunityProposal extends CommonTestsLogin
+public class Can_Create_CommunityProposal extends CommonTests
 {
   
     static String s="CanCreateCommunity";
@@ -20,6 +20,7 @@ public class Can_Create_CommunityProposal extends CommonTestsLogin
 	@Test
 	public void test() 
 	{
+		AdminLogin.login();
 		Assert.assertEquals("Failed",true,CommunityFormCheck.IsForm());
 	}
 	
