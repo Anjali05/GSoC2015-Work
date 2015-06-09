@@ -16,7 +16,7 @@ public class GithubLoginTest extends CommonTests
 	
 	@Test
 	public void test()
-        {
+    {
 		LoginPage.Goto();
 		LoginCommand.GithubLogin();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtGitHUbLogin());

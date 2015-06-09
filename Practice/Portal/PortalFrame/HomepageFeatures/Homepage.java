@@ -1,9 +1,7 @@
 package HomepageFeatures;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import Login.Driver;
+import PageElements.PageObjRef;
+import WebDriver.Driver;
 
 public class Homepage 
 {
@@ -17,7 +15,7 @@ public class Homepage
 	}
 	public static boolean IsAtSystersCommunitiesPage() 
 	{
-	    ReadMore=Driver.Instance.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/a"));
+	    ReadMore=Driver.Instance.findElement(PageObjRef.ReadMore1);
 		ReadMore.click();
 		
 		for(String curURL : Driver.Instance.getWindowHandles())
@@ -35,7 +33,7 @@ public class Homepage
 	}
 	public static boolean IsAtSystersCRAWPage() 
 	{
-	    ReadMore=Driver.Instance.findElement(By.xpath("html/body/div[2]/div[4]/div[1]/a"));
+	    ReadMore=Driver.Instance.findElement(PageObjRef.ReadMore2);
 		ReadMore.click();
 		
 		for(String curURL : Driver.Instance.getWindowHandles())
@@ -53,7 +51,7 @@ public class Homepage
 	}
 	public static boolean IsAtSystersInitiativesPage() 
 	{
-		ReadMore=Driver.Instance.findElement(By.xpath("html/body/div[2]/div[3]/div[2]/a"));
+		ReadMore=Driver.Instance.findElement(PageObjRef.ReadMore3);
 		ReadMore.click();
 			
 		for(String curURL : Driver.Instance.getWindowHandles())
@@ -71,7 +69,7 @@ public class Homepage
 	}
 	public static Object IsAtSystersTechnicalInitiativePage() 
 	{
-		ReadMore=Driver.Instance.findElement(By.xpath("html/body/div[2]/div[5]/div[2]/a"));
+		ReadMore=Driver.Instance.findElement(PageObjRef.ReadMore4);
 		ReadMore.click();
 			
 		for(String curURL : Driver.Instance.getWindowHandles())

@@ -1,11 +1,11 @@
 package Login;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import WebDriver.Driver;
 
 public class LoggedInCheck 
 {
-
+     //Refactor: General IsAt
 	public static boolean IsAt() 
 	{
 		WebElement check=Driver.Instance.findElement(By.xpath("html/body/div[3]/div[2]/div[1]/h1"));

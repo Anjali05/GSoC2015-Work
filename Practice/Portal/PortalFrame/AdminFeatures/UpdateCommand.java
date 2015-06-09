@@ -1,9 +1,7 @@
 package AdminFeatures;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import Login.Driver;
+import PageElements.PageObjRef;
+import WebDriver.Driver;
 
 public class UpdateCommand 
 {
@@ -18,10 +16,10 @@ public class UpdateCommand
 
 	public void Update() 
 	{
-	   WebElement Lastname=	Driver.Instance.findElement(By.id("id_last_name"));
+	   WebElement Lastname=	Driver.Instance.findElement(PageObjRef.Lastname);
 	   Lastname.clear();
 	   Lastname.sendKeys(change);
-	   WebElement Submit=Driver.Instance.findElement(By.id("submit-id-save"));
+	   WebElement Submit=Driver.Instance.findElement(PageObjRef.Submit);
 	   Submit.click();
 	   
 	}

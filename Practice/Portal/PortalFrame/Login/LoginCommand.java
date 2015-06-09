@@ -1,12 +1,10 @@
 package Login;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import PageElements.PageObjRef;
+import WebDriver.Driver;
 
 public class LoginCommand 
 {
-
-
 	private String username;
 	private String password;
 	private int index;
@@ -25,33 +23,33 @@ public class LoginCommand
 	{
 		//Driver.Instance.get(LoginPage.baseURL + "/");
 		
-	    WebElement usrname=Driver.Instance.findElement(By.id("id_login"));
+	    WebElement usrname=Driver.Instance.findElement(PageObjRef.username);
 		usrname.clear();
 		usrname.sendKeys(username);
-		WebElement passwrd=Driver.Instance.findElement(By.id("id_password"));
+		WebElement passwrd=Driver.Instance.findElement(PageObjRef.password);
 		passwrd.clear();
 		passwrd.sendKeys(password);
-		WebElement signUp=Driver.Instance.findElement(By.xpath("//button[@type='submit']"));
-		signUp.click();
+		WebElement signIn=Driver.Instance.findElement(PageObjRef.SignIn);
+		signIn.click();
 	}
 	
 	public static void GoogleLogin()
 	{
-		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[1]")).click();
+		Driver.Instance.findElement(PageObjRef.Google).click();
 	}
 	public static void FacebookLogin() 
 	{
-		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[2]")).click();
+		Driver.Instance.findElement(PageObjRef.Facebook).click();
 		
 	}
 	public static void TwitterLogin() 
 	{
-		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[3]")).click();
+		Driver.Instance.findElement(PageObjRef.Twitter).click();
 		
 	}
 	public static void GithubLogin() 
 	{
-		Driver.Instance.findElement(By.xpath("html/body/div[2]/div[1]/div/a[4]")).click();
+		Driver.Instance.findElement(PageObjRef.Github).click();
 	}
 	
 }

@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-import CommonTests.CommonTests;
+import BaseTests.CommonTests;
 import HomepageFeatures.Homepage;
 
 public class SystersAndCRAwReadMoreTest extends CommonTests

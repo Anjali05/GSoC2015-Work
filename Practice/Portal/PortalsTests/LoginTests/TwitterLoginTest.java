@@ -1,12 +1,7 @@
 package LoginTests;
-
-import static org.junit.Assert.*;
 import junit.framework.Assert;
-
 import org.junit.Test;
-
-
-import CommonTests.CommonTests;
+import BaseTests.CommonTests;
 import Login.LoggedInCheck;
 import Login.LoginCommand;
 import Login.LoginPage;

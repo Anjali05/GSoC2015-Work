@@ -1,4 +1,4 @@
-package Login;
+package WebDriver;
 
 import java.io.File;
 import java.io.IOException;

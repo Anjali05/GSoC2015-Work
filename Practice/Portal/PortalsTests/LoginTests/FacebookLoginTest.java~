@@ -6,20 +6,20 @@ import Login.LoggedInCheck;
 import Login.LoginCommand;
 import Login.LoginPage;
 
-public class GithubLoginTest extends CommonTests
+public class FacebookLoginTest extends CommonTests
 {
-	static String s="GithubLogin";
-	public GithubLoginTest() 
+	static String s="FacebookLogin";
+	public FacebookLoginTest() 
 	{
 		super(s);
 	}
-	
+
 	@Test
 	public void test()
-        {
+    {
 		LoginPage.Goto();
-		LoginCommand.GithubLogin();
-		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtGitHUbLogin());
+		LoginCommand.FacebookLogin();
+		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtFacebookLogin());
 	}
 
 }

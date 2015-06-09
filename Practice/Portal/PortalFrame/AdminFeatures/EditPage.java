@@ -1,16 +1,14 @@
 package AdminFeatures;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import Login.Driver;
+import PageElements.PageObjRef;
+import WebDriver.Driver;
 
 public class EditPage 
 {
 
 	public static void Goto() 
 	{
-		WebElement EditButton= Driver.Instance.findElement(By.xpath("html/body/div[3]/div[2]/div[2]/div/div[2]/div[1]/a"));
+		WebElement EditButton= Driver.Instance.findElement(PageObjRef.Edit);
 		EditButton.click();
 		
 	}

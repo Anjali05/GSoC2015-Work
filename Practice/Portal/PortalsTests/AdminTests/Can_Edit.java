@@ -1,12 +1,10 @@
 package AdminTests;
 import org.junit.Assert;
 import org.junit.Test;
-
 import AdminFeatures.AdminLogin;
 import AdminFeatures.EditPage;
 import AdminFeatures.ViewUpdate;
-import CommonTests.CommonTests;
-import Login.LoginPage;
+import BaseTests.CommonTests;
 
 public class Can_Edit extends CommonTests
 {
