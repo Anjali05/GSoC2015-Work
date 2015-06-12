@@ -1,9 +1,6 @@
 package BaseTests;
-
 import static org.junit.Assert.*;
-
 import java.io.IOException;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,29 +11,32 @@ import WebDriver.Driver;
 public class CommonTests
 {
     String s;
-	public CommonTests(String s)
+	public CommonTests()//(String s)
 	{
-		this.s=s;
+		//this.s=s;
 	}
-    
-    @Before
+
+	@Before
     public void InitDriver()
     {
-    	Driver.Initialize(s);
+    	Driver.Initialize ();  //(s);
 	Homepage.Goto();
-    }
+	}
 	   
     @After
     public void tearDown()
      {
     	try 
-	  {
-	   Driver.close();
-          } 
+			{
+				Driver.close();
+			} 
+			catch (IOException e) 
+			{
+				e.printStackTrace();
+			}
+	}
+
+		
 	
-       catch (IOException e) 		
-          {			
-           e.printStackTrace();
-	 }
-    }
+
 }

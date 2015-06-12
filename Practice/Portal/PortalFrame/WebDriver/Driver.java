@@ -13,10 +13,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Driver 
 {
 	public static WebDriver Instance;
-	public static String screenshot;
-	public static void Initialize(String s)
+	public static String screenshot="Test";
+	public static void Initialize()//(String s)
 	{
-		screenshot=s;
+		//screenshot=s;
 		Instance=new FirefoxDriver();
 		Instance.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
@@ -25,7 +25,7 @@ public class Driver
 	{
 		File scrshot=((TakesScreenshot)Instance).getScreenshotAs(OutputType.FILE);//TakesScreenshot driver cannot be instantiated
 		FileUtils.copyFile(scrshot, new File("/home/shally/GSOC-2015/Workspace/Local_Workspace/" +
-				                            "Portal/Screenshots/"+screenshot+".png"));
+				                            "Portal/Screenshots/"+screenshot+(int)(Math.random()*1000000)/100000+".png"));
 		Instance.close();
 		
 	}

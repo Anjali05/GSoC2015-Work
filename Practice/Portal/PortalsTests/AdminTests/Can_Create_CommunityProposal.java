@@ -8,10 +8,10 @@ import BaseTests.CommonTests;
 public class Can_Create_CommunityProposal extends CommonTests
 {
   
-        static String s="CanCreateCommunity";
+    static String s="CanCreateCommunity";
 	public Can_Create_CommunityProposal() 
 	{
-		super(s);
+		//super(s);
 		
 	}
 	@Test

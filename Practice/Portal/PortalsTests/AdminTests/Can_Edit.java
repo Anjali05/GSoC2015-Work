@@ -11,7 +11,7 @@ public class Can_Edit extends CommonTests
 	static String s="EditProfile";
 	public Can_Edit() 
 	{
-		super(s);
+		//super(s);
 		
 	}
 

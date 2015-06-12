@@ -13,7 +13,7 @@ public class SystersAndCRAwReadMoreTest extends CommonTests
 	static String s="SystersCRA-W";
 	public SystersAndCRAwReadMoreTest() 
 	{
-		super(s);
+		//super(s);
 	}
 
 	@Test

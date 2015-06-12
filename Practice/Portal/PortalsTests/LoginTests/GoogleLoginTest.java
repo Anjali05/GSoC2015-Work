@@ -12,7 +12,7 @@ public class GoogleLoginTest extends CommonTests
 	static String s="GoogleLogin";
 	public GoogleLoginTest() 
 	{
-		super(s);
+		//super(s);
 		
 	}
 
@@ -21,6 +21,7 @@ public class GoogleLoginTest extends CommonTests
 	{
 		LoginPage.Goto();
 		LoginCommand.GoogleLogin();
+		//System.out.println(new GoogleLoginTest().getClass());
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtGoogleLogin());
 	}
 

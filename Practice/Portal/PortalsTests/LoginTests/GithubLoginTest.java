@@ -11,12 +11,12 @@ public class GithubLoginTest extends CommonTests
 	static String s="GithubLogin";
 	public GithubLoginTest() 
 	{
-		super(s);
+		//super(s);
 	}
 	
 	@Test
 	public void test()
-        {
+    {
 		LoginPage.Goto();
 		LoginCommand.GithubLogin();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtGitHUbLogin());

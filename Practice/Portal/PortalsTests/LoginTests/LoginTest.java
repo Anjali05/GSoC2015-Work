@@ -26,12 +26,13 @@ public class LoginTest extends CommonTests
 		return Arrays.asList(new Object[][]{
 				{"anjali","anjali"},
 				{"abc","xyz"},
-				{"random",""}
+				{"random",""},
+				{"",""}
 		});		
 	}
 	public LoginTest(String username, String password) 
 	{
-		super(s);
+		//super(s);
 		this.username=username;
 		this.password=password;
 		
@@ -43,6 +44,7 @@ public class LoginTest extends CommonTests
 		LoginPage.Goto();
 		LoginPage.LoginAs(username).WithPassword(password).Login();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAt());
+	
 	}
 	
 

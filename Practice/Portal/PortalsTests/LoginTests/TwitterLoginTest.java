@@ -11,7 +11,7 @@ public class TwitterLoginTest extends CommonTests
     static String s="TwitterLogin";
 	public TwitterLoginTest()
 	{
-		super(s);
+		//super(s);
 	}
 
 	@Test

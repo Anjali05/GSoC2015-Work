@@ -10,7 +10,7 @@ public class SystersTechnicalInterestsReadMoreTest extends CommonTests
 	static String s="SystersTechnicalInitiative";
 	public SystersTechnicalInterestsReadMoreTest() 
 	{
-		super(s);
+		//super(s);
 		
 	}
 

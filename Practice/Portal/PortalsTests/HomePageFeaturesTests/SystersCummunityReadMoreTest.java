@@ -12,7 +12,7 @@ public class SystersCummunityReadMoreTest extends CommonTests
 	
 	public SystersCummunityReadMoreTest()
 	{
-		super(s);
+		//super(s);
 	}
 	@Test
 	public void test() 

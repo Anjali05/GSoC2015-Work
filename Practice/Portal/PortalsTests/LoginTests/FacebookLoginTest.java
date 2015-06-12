@@ -11,12 +11,12 @@ public class FacebookLoginTest extends CommonTests
 	static String s="FacebookLogin";
 	public FacebookLoginTest() 
 	{
-		super(s);
+		//super(s);
 	}
 
 	@Test
 	public void test()
-        {
+    {
 		LoginPage.Goto();
 		LoginCommand.FacebookLogin();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAtFacebookLogin());
