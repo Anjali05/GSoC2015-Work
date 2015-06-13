@@ -20,7 +20,7 @@ public class CommonTests
     public void InitDriver()
     {
     	Driver.Initialize ();  //(s);
-	Homepage.Goto();
+	   	Homepage.Goto();
 	}
 	   
     @After
