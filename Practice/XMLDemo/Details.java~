@@ -1,8 +1,4 @@
 
-/*
- * @author Anjali
- */
-
 public class Details 
 {
 	String id,firstname,lastname,City;

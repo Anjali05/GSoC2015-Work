@@ -3,10 +3,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import WebDriver.Driver;
 
-/*
- * @author Anjali
- */
-
 public class LoggedInCheck 
 {
      //Refactor: General IsAt

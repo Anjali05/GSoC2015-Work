@@ -1,9 +1,5 @@
 package DBFrames;
 
-/*
- * @author Anjali
- */
-
 public class PageRefObj 
 {
 	//DB connection URL eg="jdbc:msql://ip:post_no/DBname"

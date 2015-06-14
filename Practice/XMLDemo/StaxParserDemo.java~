@@ -19,7 +19,7 @@ public class StaxParserDemo
 		
 		//XMLINputFactory and XMLStreamReader are needed for loading the xml doc
 		XMLInputFactory factory=XMLInputFactory.newInstance();
-		XMLStreamReader reader=factory.createXMLStreamReader(new FileInputStream("/home/shally/GSOC-2015/Workspace/Local_Workspace/Practice/XML/Demo.xml"));
+		XMLStreamReader reader=factory.createXMLStreamReader(new FileInputStream("/Path to/Demo.xml"));
 		//XMLStreamReader reader=factory.createXMLStreamReader(ClassLoader.getSystemResourceAsStream("/home/shally/GSOC-2015/Workspace/" +
 			//	             	 "Local_Workspace/Practice/XML/Demo.xml"));//gives only read only access to xml file
 		

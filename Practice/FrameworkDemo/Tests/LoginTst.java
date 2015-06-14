@@ -1,12 +1,13 @@
 import static org.junit.Assert.fail;
 import junit.framework.Assert;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import framework.*;;
 
+/*
+ * @author Anjali
+ */
 
 public class LoginTst {
 

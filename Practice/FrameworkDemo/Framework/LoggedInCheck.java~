@@ -1,11 +1,7 @@
 package framework;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-/*
- * @author Anjali
- */
-
 public class LoggedInCheck 
 {
 

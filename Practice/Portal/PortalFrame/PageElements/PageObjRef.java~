@@ -1,10 +1,6 @@
 package PageElements;
 import org.openqa.selenium.By;
 
-/*
- * @author Anjali
- */
-
 public class PageObjRef
 {
     //HomePage Elements

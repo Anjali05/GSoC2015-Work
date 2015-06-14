@@ -19,7 +19,7 @@ public class LoginTst {
 	public void UserLogin() 
 	{
 		LoginPage.GoTo();
-		LoginPage.LoginAs("anjalis").WithPassword("anjali05").Login();
+		LoginPage.LoginAs("username").WithPassword("password").Login();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAt());
 		
 	}

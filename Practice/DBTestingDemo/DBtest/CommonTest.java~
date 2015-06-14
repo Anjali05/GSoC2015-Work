@@ -1,15 +1,15 @@
 package DBtest;
+
 import static org.junit.Assert.*;
+
 import java.io.IOException;
 import java.sql.SQLException;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import DBFrames.ConnectToDB;
 
-/*
- * @author Anjali
- */
+import DBFrames.ConnectToDB;
 
 public class CommonTest
 {

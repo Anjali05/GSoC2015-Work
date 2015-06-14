@@ -1,6 +1,8 @@
 import static org.junit.Assert.fail;
+
 import java.io.File;
 import java.io.IOException;
+
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Test;
@@ -10,12 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-/*
- * @author Anjali
- */
 
-public class TakeScreenShot 
-{
+public class TakeScreenShot {
 
 	public WebDriver driver;
 	String url="http://google.com";
