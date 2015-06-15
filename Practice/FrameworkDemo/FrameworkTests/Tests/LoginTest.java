@@ -1,3 +1,4 @@
+package Tests;
 import static org.junit.Assert.fail;
 import junit.framework.Assert;
 import org.junit.After;
@@ -9,7 +10,7 @@ import framework.*;;
  * @author Anjali
  */
 
-public class LoginTst {
+public class LoginTest {
 
 	@Before
 	public void init()
@@ -20,7 +21,7 @@ public class LoginTst {
 	public void UserLogin() 
 	{
 		LoginPage.GoTo();
-		LoginPage.LoginAs("username").WithPassword("password").Login();
+		LoginPage.LoginAs("anjalis").WithPassword("anjali05").Login();
 		Assert.assertEquals("Failed",true,LoggedInCheck.IsAt());
 		
 	}
