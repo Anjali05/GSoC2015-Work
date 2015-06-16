@@ -8,14 +8,12 @@ import HomepageFeatures.*;
 import Login.LoginPage;
 import WebDriver.Driver;
 
+/*
+* @author Anjali
+*/
+
 public class CommonTests
 {
-    String s;
-	public CommonTests()//(String s)
-	{
-		//this.s=s;
-	}
-
 	@Before
     public void InitDriver()
     {

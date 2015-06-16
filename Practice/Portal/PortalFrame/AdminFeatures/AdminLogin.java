@@ -2,14 +2,14 @@ package AdminFeatures;
 import Login.LoginPage;
 
 /*
- * @author Anjali
- */
+* @author Anjali
+*/
 
 public class AdminLogin 
 {
 	public static void login()
 	{
 		LoginPage.Goto();
-		LoginPage.LoginAs("Anjali").WithPassword("anjali").Login();
+		LoginPage.LoginAs("anjali").WithPassword("anjali").Login();
 	}
 }

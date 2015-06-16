@@ -6,14 +6,12 @@ import Login.LoggedInCheck;
 import Login.LoginCommand;
 import Login.LoginPage;
 
+/*
+* @author Anjali
+*/
+
 public class GithubLoginTest extends CommonTests
 {
-	static String s="GithubLogin";
-	public GithubLoginTest() 
-	{
-		//super(s);
-	}
-	
 	@Test
 	public void test()
     {

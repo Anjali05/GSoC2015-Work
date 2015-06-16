@@ -4,16 +4,12 @@ import org.junit.Test;
 import BaseTests.CommonTests;
 import HomepageFeatures.Homepage;
 
+/*
+* @author Anjali
+*/
+
 public class SystersTechnicalInterestsReadMoreTest extends CommonTests
 {
-
-	static String s="SystersTechnicalInitiative";
-	public SystersTechnicalInterestsReadMoreTest() 
-	{
-		//super(s);
-		
-	}
-
 	@Test
 	public void test() 
 	{

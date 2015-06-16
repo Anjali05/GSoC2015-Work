@@ -2,14 +2,14 @@ package PageElements;
 import org.openqa.selenium.By;
 
 /*
- * @author Anjali
- */
+* @author Anjali
+*/
 
 public class PageObjRef
 {
-    //HomePage Elements
-    public static By CommunityTab = By.xpath("html/body/div[1]/div/div[2]/ul[1]/li[2]/a");
-    public static By ChooseCommunity = By.xpath("html/body/div[1]/div/div[2]/ul[1]/li[2]/ul/li[2]/a");
+	//HomePage Elements
+	public static By CommunityTab = By.xpath("html/body/div[1]/div/div[2]/ul[1]/li[2]/a");
+	public static By ChooseCommunity = By.xpath("html/body/div[1]/div/div[2]/ul[1]/li[2]/ul/li[2]/a");
     public static By ReadMore1 = By.xpath("html/body/div[2]/div[2]/div[1]/a");
     public static By ReadMore2 = By.xpath("html/body/div[2]/div[4]/div[1]/a");
     public static By ReadMore3 = By.xpath("html/body/div[2]/div[3]/div[2]/a");

@@ -1,17 +1,18 @@
 package LoginTests;
 import java.util.Arrays;
 import java.util.Collection;
-
 import junit.framework.Assert;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-
 import BaseTests.CommonTests;
 import Login.LoggedInCheck;
 import Login.LoginPage;
+
+/*
+* @author Anjali
+*/
 
 @RunWith(Parameterized.class)
 public class LoginTest extends CommonTests
@@ -24,10 +25,10 @@ public class LoginTest extends CommonTests
 	public static Collection<Object[]>data()
 	{
 		return Arrays.asList(new Object[][]{
-				{"anjali","anjali"},
-				{"abc","xyz"},
-				{"random",""},
-				{"",""}
+				{"anjali","anjali"},//pass
+				{"abc","xyz"},//fail
+				{"random",""},//fail
+				{"",""} //fail
 		});		
 	}
 	public LoginTest(String username, String password) 

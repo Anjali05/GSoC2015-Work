@@ -6,15 +6,12 @@ import AdminFeatures.EditPage;
 import AdminFeatures.ViewUpdate;
 import BaseTests.CommonTests;
 
-public class Can_Edit extends CommonTests
-{
-	static String s="EditProfile";
-	public Can_Edit() 
-	{
-		//super(s);
-		
-	}
+/*
+* @author Anjali
+*/
 
+public class CanEditTest extends CommonTests
+{
 	@Test
 	public void test()
 	{

@@ -4,8 +4,8 @@ import org.openqa.selenium.WebElement;
 import WebDriver.Driver;
 
 /*
- * @author Anjali
- */
+* @author Anjali
+*/
 
 public class LoggedInCheck 
 {
@@ -15,7 +15,7 @@ public class LoggedInCheck
 		WebElement check=Driver.Instance.findElement(By.xpath("html/body/div[3]/div[2]/div[1]/h1"));
 		String str_check=check.getText();
 		System.out.println(str_check);
-		 if(str_check.equals("Anjali Kumar"))
+		 if(str_check.equals("anjali"))
 		    	return true;
 		    else
 		       return false;

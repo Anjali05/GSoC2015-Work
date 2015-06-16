@@ -6,14 +6,14 @@ import Login.LoggedInCheck;
 import Login.LoginCommand;
 import Login.LoginPage;
 
+
+/*
+* @author Anjali
+*/
+
+
 public class FacebookLoginTest extends CommonTests
 {
-	static String s="FacebookLogin";
-	public FacebookLoginTest() 
-	{
-		//super(s);
-	}
-
 	@Test
 	public void test()
     {

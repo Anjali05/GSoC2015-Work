@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /*
- * @author Anjali
- */
+* @author Anjali
+*/
 
 public class Driver 
 {

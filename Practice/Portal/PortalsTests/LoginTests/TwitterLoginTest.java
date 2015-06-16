@@ -6,13 +6,12 @@ import Login.LoggedInCheck;
 import Login.LoginCommand;
 import Login.LoginPage;
 
+/*
+* @author Anjali
+*/
+
 public class TwitterLoginTest extends CommonTests
 {
-    static String s="TwitterLogin";
-	public TwitterLoginTest()
-	{
-		//super(s);
-	}
 
 	@Test
 	public void test()

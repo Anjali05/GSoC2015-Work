@@ -4,16 +4,12 @@ import org.junit.Test;
 import BaseTests.CommonTests;
 import HomepageFeatures.Homepage;
 
+/*
+* @author Anjali
+*/
 
 public class SystersCummunityReadMoreTest extends CommonTests
 {
-
-	static String s="CommunityReadMore";
-	
-	public SystersCummunityReadMoreTest()
-	{
-		//super(s);
-	}
 	@Test
 	public void test() 
 	{

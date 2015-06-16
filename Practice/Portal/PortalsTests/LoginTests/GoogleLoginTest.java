@@ -6,15 +6,12 @@ import Login.LoggedInCheck;
 import Login.LoginCommand;
 import Login.LoginPage;
 
+/*
+* @author Anjali
+*/
+
 public class GoogleLoginTest extends CommonTests
 {
-
-	static String s="GoogleLogin";
-	public GoogleLoginTest() 
-	{
-		//super(s);
-		
-	}
 
 	@Test
 	public void test() 
