@@ -1,4 +1,4 @@
-package DBtest;
+package DBTests;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,7 +8,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import DBFrames.ConnectToDB;
+
+import DBFrame.ConnectToDB;
 
 /*
  * @author Anjali

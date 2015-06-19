@@ -1,9 +1,10 @@
-package DBtest;
+package DBTests;
 import java.io.IOException;
 import java.sql.SQLException;
 import org.junit.After;
 import org.junit.Before;
-import DBFrames.ConnectToDB;
+
+import DBFrame.ConnectToDB;
 
 /*
  * @author Anjali

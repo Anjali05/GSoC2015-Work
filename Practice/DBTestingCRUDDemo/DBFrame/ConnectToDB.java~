@@ -1,4 +1,4 @@
-package DBFrames;
+package DBFrame;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,11 +21,13 @@ public class ConnectToDB
 	
 	public static void Initialize() throws ClassNotFoundException, SQLException
 	{
-		
-	    Class.forName(PageRefObj.JDBCDriver);
-	    Properties p =new Properties();
-	    p.put("user", PageRefObj.DBusername);
-	    p.put("password", PageRefObj.DBpassword);
+		//screenshot=s;
+		//Instance=new FirefoxDriver();
+		//Instance.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Class.forName(PageRefObj.JDBCDriver);
+		Properties p =new Properties();
+		p.put("user", PageRefObj.DBusername);
+		p.put("password", PageRefObj.DBpassword);
 	    con=DriverManager.getConnection(PageRefObj.ConnectionURL, p);
 	    stmt = (Statement)con.createStatement();
 	}

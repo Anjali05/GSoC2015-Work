@@ -1,4 +1,4 @@
-package DBFrames;
+package DBFrame;
 
 /*
  * @author Anjali
