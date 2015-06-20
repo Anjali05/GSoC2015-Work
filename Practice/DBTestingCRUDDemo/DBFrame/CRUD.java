@@ -12,7 +12,7 @@ public class CRUD
 
 	static ResultSet rs;
 
-        //CReate new table ans checks creation 
+        //Creates new table and checks creation 
 	public static boolean CanCreate(String Query, String tablename) throws SQLException
 	{
 		ConnectToDB.stmt.executeUpdate(Query);
@@ -47,7 +47,7 @@ public class CRUD
 		else return false;
 	}
 	
-        //Read from inserted tuple and verifies
+        //Reads from inserted tuple and verifies
 	public static boolean CanRead(String Query) throws SQLException
 	{
 		rs=ConnectToDB.stmt.executeQuery(Query);
@@ -70,7 +70,7 @@ public class CRUD
 		else return false;
 	}
 
-        //Delete tuple and verifies
+        //Deletes tuple and verifies
 	public static boolean CanDelete(String Query) throws SQLException
 	{
 		int s=ConnectToDB.stmt.executeUpdate(Query);//returns 1 on successful delete
