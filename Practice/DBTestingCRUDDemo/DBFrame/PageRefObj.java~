@@ -10,8 +10,8 @@ public class PageRefObj
 	public static String ConnectionURL="jdbc:mysql://127.0.0.1/userDB";
 	
 	//DB username and password
-	public static String DBusername="dummyDBName";
-	public static String DBpassword="dummyDBPassword";
+	public static String DBusername="anjali";
+	public static String DBpassword="anjali";
 	
 	//JDBC Driver
 	public static String JDBCDriver="com.mysql.jdbc.Driver";
