@@ -21,7 +21,7 @@ public class DBTests extends CommonTest
 	private String TableName= "dummytable";
 	private String Query;
 	
-	//Test creation of table
+	//Tests creation of table
 	@Test
 	public void TestA_CreateTest() throws SQLException
 	{
@@ -57,7 +57,7 @@ public class DBTests extends CommonTest
 	}
 	
 	
-	//checks deletion of tuple created
+	//Tests deletion of tuple created
 	@Test
 	public void TestE_DeleteTest() throws SQLException
 	{
