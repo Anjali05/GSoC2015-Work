@@ -1,5 +1,4 @@
 package DBFrame;
-
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,6 +11,8 @@ public class CRUD
 {
 
 	static ResultSet rs;
+
+        //CReate new table ans checks creation 
 	public static boolean CanCreate(String Query, String tablename) throws SQLException
 	{
 		ConnectToDB.stmt.executeUpdate(Query);
@@ -19,7 +20,8 @@ public class CRUD
 
 		//Validate creation
 		DatabaseMetaData dbm = ConnectToDB.con.getMetaData();
-		// check if table is there
+		
+                // To check if table is there
 		ResultSet table = dbm.getTables(null, null,tablename, null);
 		if (table.next())
 		{
@@ -34,6 +36,7 @@ public class CRUD
 		
 	}
 	
+        //Inserts new tuple into the created table
 	public static boolean CanInsert(String Query) throws SQLException
 	{
 		int s=ConnectToDB.stmt.executeUpdate(Query);//returns 1 on successful insertion
@@ -44,6 +47,7 @@ public class CRUD
 		else return false;
 	}
 	
+        //
 	public static boolean CanRead(String Query) throws SQLException
 	{
 		rs=ConnectToDB.stmt.executeQuery(Query);
