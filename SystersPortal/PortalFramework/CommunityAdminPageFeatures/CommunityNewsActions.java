@@ -1,7 +1,5 @@
 package CommunityAdminPageFeatures;
-
 import org.openqa.selenium.WebElement;
-
 import PageElements.PageObjRef;
 import WebDriver.Driver;
 
@@ -86,9 +84,9 @@ public class CommunityNewsActions extends CommunityAdminLogin
 		String str_check=Driver.Instance.findElement(PageObjRef.UpdatedNewsTilte).getText();
 		
 		if(str_check.equals(newTitle))
-	           return true;
+			return true;
 		else
-		   return false;
+			return false;
 	}
 
 	public static boolean HasCurrentNewsBeenDeleted()
@@ -108,9 +106,9 @@ public class CommunityNewsActions extends CommunityAdminLogin
 		Confirm.click();
 		
 		//Validate
-	        if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/news/"))
+	   if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/news/"))
 		   return true;
-	        else
+	   else
 		   return false;
 	}
 	

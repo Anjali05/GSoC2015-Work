@@ -1,5 +1,7 @@
 package CommunityAdminPageFeatures;
+
 import org.openqa.selenium.WebElement;
+
 import PageElements.PageObjRef;
 import WebDriver.Driver;
 
@@ -50,7 +52,7 @@ public class CommunityResourceActions extends CommunityAdminLogin
 				
 		//Switch to Content frame and enter content
 		Driver.Instance.switchTo().frame(Content);
-	        Driver.Instance.switchTo().activeElement().sendKeys(resourceContent);
+	    Driver.Instance.switchTo().activeElement().sendKeys(resourceContent);
 		Driver.Instance.switchTo().defaultContent();
 
 		//Click save
@@ -59,9 +61,9 @@ public class CommunityResourceActions extends CommunityAdminLogin
 				
 		//Validate
 		if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/resources/"+resourceSlug+"/"))
-     		    return true;
+     		  return true;
 		else 
-	            return false;
+	   		  return false;
 		
 	}
 
@@ -104,9 +106,9 @@ public class CommunityResourceActions extends CommunityAdminLogin
 		Confirm.click();
 		
 		//Validate
-	        if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/resources/"))
+	   if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/resources/"))
 		   return true;
-	        else
+	   else
 		   return false;
 	}
 

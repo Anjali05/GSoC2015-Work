@@ -1,5 +1,7 @@
 package CommunityAdminPageFeatures;
+
 import org.openqa.selenium.WebElement;
+
 import PageElements.PageObjRef;
 import WebDriver.Driver;
 
@@ -16,7 +18,7 @@ public class CommunityPageActions extends CommunityAdminLogin
 		//Login as admin and goto community page
 		login();
 		
-                WebElement AddPage, Title, Slug, Content,Order, submit;
+        WebElement AddPage, Title, Slug, Content,Order, submit;
 		
 		//Select Add Page
 		AddPage= Driver.Instance.findElement(PageObjRef.AddPage);
@@ -33,7 +35,7 @@ public class CommunityPageActions extends CommunityAdminLogin
 		
 		//Switch to Content frame and enter content
 		Driver.Instance.switchTo().frame(Content);
-	        Driver.Instance.switchTo().activeElement().sendKeys(pageContent);
+	    Driver.Instance.switchTo().activeElement().sendKeys(pageContent);
 		Driver.Instance.switchTo().defaultContent();
 
 		//Click save
@@ -89,10 +91,10 @@ public class CommunityPageActions extends CommunityAdminLogin
 		Confirm.click();
 				
 		//Validate
-	        if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/news/"))
-		         return true;
-	        else
-		         return false;
+	   if((Driver.Instance.getCurrentUrl()).equals(PageObjRef.baseURL+"community/"+PageObjRef.dummySlug+"/news/"))
+		   return true;
+	   else
+		   return false;
 	}
 
 }

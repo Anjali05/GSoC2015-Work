@@ -1,5 +1,7 @@
 package CommunityAdminPageFeatures;
+
 import org.openqa.selenium.WebElement;
+
 import Login.LoginPage;
 import PageElements.PageObjRef;
 import WebDriver.Driver;
@@ -16,11 +18,8 @@ public class CommunityAdminLogin
 {
 	public static void login()
 	{
-                //logs in as an admin
 		LoginPage.Goto();
 		LoginPage.LoginAs("anjali").WithPassword("anjali").Login();
-
-                //Takes to the dummy meetup location page
 		WebElement DummyCommunityName=Driver.Instance.findElement(PageObjRef.DummyCommunityName);
 		DummyCommunityName.click();
 	}
