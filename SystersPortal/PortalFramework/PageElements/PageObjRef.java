@@ -165,4 +165,11 @@ public class PageObjRef
     public static By CommunityUserandContentManager = By.xpath(".//*[@id='div_id_groups']/div/div[2]/label");
     public static By CommunityContentManager = By.xpath(".//*[@id='div_id_groups']/div/div[3]/label");
     public static By ManageCommunitySubmit= By.xpath(".//*[@id='submit-id-save']");
+    
+    //Registered Portal User
+    public static By CommunityToJoin= By.xpath("html/body/div[1]/div/div[2]/ul[1]/li[2]/ul/li[1]/a");
+    public static By JoinCommunity= By.xpath("html/body/div[2]/div[2]/div[3]/div[2]/a");  
+    public static By CheckJoinRequestSent= By.xpath("html/body/div[2]/div/div"); 
+    public static By CancelRequest= By.xpath("html/body/div[2]/div[2]/div[3]/div[2]/a");  
+    public static By CheckCancelRequest= By.xpath("html/body/div[2]/div/div"); 
 }
