@@ -1,5 +1,7 @@
 package MeetupLocationPageFeatures;
 import org.openqa.selenium.WebElement;
+
+import MeetupLocationPageFeatures.MeetupLocationAdminLogin;
 import WebDriver.Driver;
 import WebElements.PageObjModel;
 
@@ -16,8 +18,12 @@ public class MeetupLocationPage extends MeetupLocationAdminLogin
 	//Takes to the meetup location page
 	private static void GotoMeetupLocationPage()
 	{
-		//Change
-		Driver.Instance.get(PageObjModel.baseURL+"meetup/"+PageObjModel.meetupLocationSlug+"/about/#");
+		//Meetup Locations Page
+		Driver.Instance.get(PageObjModel.baseURL+"meetup/locations/");
+		
+		//Select Meetup Location and goto that location page
+		WebElement ChooseLocation= Driver.Instance.findElement(PageObjModel.SelectLocation);
+		ChooseLocation.click();
 	}
 
 	//Validates About
@@ -31,8 +37,13 @@ public class MeetupLocationPage extends MeetupLocationAdminLogin
 		WebElement About= Driver.Instance.findElement(PageObjModel.MeetupLocAbout);
 		About.click();
 		
-		//Validate URL
-		if((Driver.Instance.getCurrentUrl()).equals(PageObjModel.baseURL+"meetup/"+PageObjModel.meetupLocationSlug+"/about/"))
+		//Extract About title
+		WebElement AboutTitle= Driver.Instance.findElement(PageObjModel.MeetupLocAboutTitle);
+		String Title= AboutTitle.getText();
+		
+		//Validate URL and tile 
+		if((Driver.Instance.getCurrentUrl()).equals(PageObjModel.baseURL+"meetup/"+PageObjModel.meetupLocationSlug+"/about/")
+			&& Title.equals("About"))
 			return true;
 		else
 			return false;

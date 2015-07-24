@@ -1,6 +1,8 @@
 package WebElements;
 import org.openqa.selenium.By;
 
+import WebDriver.Driver;
+
 /*
  * @author Anjali
  */
@@ -15,17 +17,30 @@ public class PageObjModel
 	
 	
 	//Homepage
-	public static By Login=By.xpath("html/body/div[1]/div/div[2]/ul[2]/li[2]/a");
+	public static By Login= By.xpath("html/body/div[1]/div/div[2]/ul[2]/li[2]/a");
+	
+	/*
+	 * Change
+	 */
+	public static By MeetupLocations= By.xpath("");
 	
 	//LoginPage
-	public static By username=By.id("id_login");
-	public static By password=By.id("id_password");
-	public static By SignIn=By.xpath("//button[@type='submit']");
+	public static By username= By.id("id_login");
+	public static By password= By.id("id_password");
+	public static By SignIn= By.xpath("//button[@type='submit']");
 
 
+	//Meetup Locations
+	public static By MeetupLocationsTitle= By.xpath("html/body/div[2]/h2");
+	public static By Map= By.xpath(".//*[@id='map-canvas']");
+	//public static By Map= By.xpath("/html/body/div[2]/div[1]/div/div/div[2]");
+	public static By SelectLocation= By.xpath("html/body/div[2]/div[2]/div[1]/a");
+	
 	//Meetup Location
-	public static String meetupLocationSlug="dummySlug";
-	public static By MeetupLocAbout= By.linkText("About");
+	public static By MeetupLocTitle= By.xpath("html/body/div[2]/div[2]/div[1]/h1");
+	public static String meetupLocationSlug="delhi";
+	public static By MeetupLocAbout= By.xpath("html/body/div[2]/div[2]/div[3]/div[2]/a");
+	public static By MeetupLocAboutTitle= By.xpath("html/body/div[2]/div[2]/div[2]/div/h3");
 	
 	/*
 	 * To be changed after UI is complete
