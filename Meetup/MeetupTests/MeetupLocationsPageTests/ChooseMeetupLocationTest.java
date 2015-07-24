@@ -12,7 +12,7 @@ import MeetupLocationsPage.MeetupLocations;
  */
 
 /*
- * Validates choosing a selecting a location from Meetup locations page
+ * Validates selecting a location from Meetup locations page
  */
 public class ChooseMeetupLocationTest extends CommonTest
 {
