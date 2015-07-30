@@ -172,4 +172,8 @@ public class PageObjRef
     public static By CheckJoinRequestSent= By.xpath("html/body/div[2]/div/div"); 
     public static By CancelRequest= By.xpath("html/body/div[2]/div[2]/div[3]/div[2]/a");  
     public static By CheckCancelRequest= By.xpath("html/body/div[2]/div/div"); 
+    
+    //Miscellaneous
+    public static By CommunityPermission= By.xpath("html/body/div[3]/div[2]/div[4]/div/div[2]/table/tbody/tr/td");
+    public static By CommunityNoPermission= By.xpath("html/body/div[3]/div[2]/div[4]/div/div[2]/p");
 }
