@@ -16,7 +16,7 @@ public class MeetupLocationPage extends MeetupLocationAdminLogin
 {
 	
 	//Takes to the meetup location page
-	private static void GotoMeetupLocationPage()
+	public static void GotoMeetupLocationPage()
 	{
 		//Meetup Locations Page
 		Driver.Instance.get(PageObjModel.baseURL+"meetup/locations/");
@@ -76,15 +76,23 @@ public class MeetupLocationPage extends MeetupLocationAdminLogin
 		AdminLogin();
 		GotoMeetupLocationPage();
 		
+		Driver.Instance.get(PageObjModel.baseURL+"meetup/"+PageObjModel.meetupLocationSlug+"/members/");
+		
 		//Click on members
-		WebElement Members= Driver.Instance.findElement(PageObjModel.MeetupLocMembers);
-		Members.click();
+		//WebElement Members= Driver.Instance.findElement(PageObjModel.MeetupLocMembers);
+		//Members.click();
+		
+		//Extracting Texts
+		WebElement Members, Organizers;
+		Members= Driver.Instance.findElement(PageObjModel.Members);
+		Organizers= Driver.Instance.findElement(PageObjModel.Organizers);
+		
+		String chk1, chk2;
+		chk1= Members.getText();
+		chk2= Organizers.getText();
 		
 		//Validate
-		/*
-		 * Change after UI is complete
-		 */
-		if((Driver.Instance.getCurrentUrl()).equals(PageObjModel.baseURL+"meetup/"+PageObjModel.meetupLocationSlug+"/members/"))
+		if(chk1.equals("Members") && chk2.equals("Organizers"))
 			return true;
 		else
 			return false;

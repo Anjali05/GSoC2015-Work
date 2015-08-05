@@ -60,4 +60,15 @@ public class PageObjModel
 	public static By AddNewMember= By.linkText("Add New Member");
 	public static By RemoveMembers= By.linkText("Remove Members");
 	public static By ShowJoinRequests= By.linkText("Show Join Requests");
+	
+	//Meetup Members Page
+	public static By Members= By.xpath("html/body/div[2]/div[2]/div[2]/div/div[2]/h2");
+	public static By Organizers= By.xpath("html/body/div[2]/div[2]/div[2]/div/div[1]/h2");
+	
+	//Meetup page
+	public static String MeetupSlug="meetupdelhi";
+	public static By MeetupTitle= By.xpath("html/body/div[2]/div[2]/div[2]/h2");
+	public static By MeetupDate= By.xpath("html/body/div[2]/div[2]/div[2]/div/p[1]/b[1]");
+	public static By MeetupTime= By.xpath("html/body/div[2]/div[2]/div[2]/div/p[1]/b[2]");
+	
 }
